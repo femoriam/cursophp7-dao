@@ -2,12 +2,17 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+/* Exemplo aula 1 $sql = new Sql();
 
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
-echo json_encode($usuarios);
+echo json_encode($usuarios); */
 
+$tony = new Usuario();
+
+$tony->loadById(2);
+
+echo $tony;
 
 
 ?>
