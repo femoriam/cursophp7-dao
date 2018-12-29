@@ -34,9 +34,15 @@ $aluno->insert();
 echo $aluno;*/
 
 /* Exemplo - Atualizando Usuario */
-$usuario = new Usuario();
+/* $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("Playsation 4", "121");
+echo $usuario; */
+
+/* Exemplo - Excluindo Usuario */
+$usuario = new Usuario();
+$usuario->loadById(13);
+$usuario->delete();
 echo $usuario;
 
 ?>
