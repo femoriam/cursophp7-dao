@@ -29,9 +29,14 @@ $usuario->login("tony", "123");
 echo $usuario; */
 
 /* Exemplo - Inserido dados */
-
-$aluno = new Usuario("Red Dead Redemption 2" , "987987");
+/*$aluno = new Usuario("Red Dead Redemption 2" , "987987");
 $aluno->insert();
-echo $aluno;
+echo $aluno;*/
+
+/* Exemplo - Atualizando Usuario */
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->update("Playsation 4", "121");
+echo $usuario;
 
 ?>
