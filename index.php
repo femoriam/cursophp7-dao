@@ -24,9 +24,14 @@ echo json_encode($lista); */
 echo json_encode($busca);*/
 
 /* Exemplo - Buscando usuario com login e senha */
-$usuario = new Usuario();
+/* $usuario = new Usuario();
 $usuario->login("tony", "123");
+echo $usuario; */
 
-echo $usuario;
+/* Exemplo - Inserido dados */
+
+$aluno = new Usuario("Red Dead Redemption 2" , "987987");
+$aluno->insert();
+echo $aluno;
 
 ?>
